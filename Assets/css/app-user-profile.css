@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap");
 body {
   background: #c4a5f7;
   margin: 0;
   padding: 0;
-  font-family: Roboto, sans-serif;
+  font-family: Nunito, sans-serif;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -209,4 +209,58 @@ body {
   background-color: #87cfeb88;
   padding: 15px;
   color: #5991a7;
+}
+
+.app-user-followups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 25px;
+  width: 70%;
+}
+
+.app-user-followups .followup-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app-user-followups .followup-text p {
+  color: #818181;
+  font-weight: 600;
+  font-size: x-large;
+  margin: 0 0 5px 0;
+}
+
+.app-user-followups .followup-text .goals {
+  color: #000;
+  font-weight: bolder;
+  padding: 0 10px 0 0;
+}
+
+.app-user-followups .followup-progress {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8px;
+  position: relative;
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.app-user-followups .followup-progress .progress-bar {
+  border-radius: 4px;
+  overflow: hidden;
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-color: #1E90FF;
 }
