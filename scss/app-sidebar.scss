@@ -21,6 +21,9 @@ $sidebar-link-color: #818181;
         justify-content: center;
         align-items: center;
         font-size: xx-large;
+        img {
+            width: 150%;
+        }
     }
     .app-sidebar-group-link {
         margin: 0 0 0 -16px;

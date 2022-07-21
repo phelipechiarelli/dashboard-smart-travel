@@ -1,0 +1,100 @@
+@import "main.scss";
+$user-profile-color: #F8F8FF;
+$control-icons-color: #818181;
+.app-user-profile-container {
+    flex: 2;
+    background-color: $user-profile-color;
+    padding: 40px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-user-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 40px 0 40px;
+    .signed-badge {
+        background-color: #87cefa88;
+        color: #1E90FF;
+        border-radius: 5px;
+        font-size: x-small;
+        font-weight: bolder;
+        margin: 2px;
+        display: flex;
+        align-items: center;
+        span {
+            margin: 4px 8px;
+        }
+    }
+    .control-icons {
+        color: $control-icons-color;
+        display: flex;
+        align-items: center;
+        i {
+            padding: 0 8px 0 8px;
+        }
+    }
+}
+
+.app-user-profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px;
+    .user-pic {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        img {
+            border-radius: 50%;
+            width: 50%;
+        }
+    }
+    .user-name {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        p {
+            padding: 0;
+            margin: 0;
+            font-weight: 600;
+            font-size: xx-large;
+        }
+        small {
+            padding: 0;
+            font-weight: 600;
+            color: #1E90FF;
+            font-size: large;
+        }
+    }
+    .user-buttons {
+        display: flex;
+        align-items: center;
+        padding: 25px;
+        .action-button {
+            color: $control-icons-color;
+            padding: 25px;
+            .green-button {
+                border-radius: 50%;
+                background-color: #98fb9880;
+                padding: 15px;
+                color: #31ad31;
+            }
+            .yellow-button {
+                border-radius: 50%;
+                background-color: #ffd9009d;
+                padding: 15px;
+                color: #b89c00;
+            }
+            .blue-button {
+                border-radius: 50%;
+                background-color: #87cfeb88;
+                padding: 15px;
+                color: #5991a7;
+            }
+        }
+    }
+}

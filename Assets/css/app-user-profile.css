@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  background: #c4a5f7;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 50%;
+  left: 50%;
+}
+
+.app-main-container {
+  background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 16px 24px 24px 16px;
+}
+
+.app-user-content-container {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background-color: #68eccf;
+  padding: 40px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-user-profile-container {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background-color: #F8F8FF;
+  padding: 40px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-user-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 10px 40px 0 40px;
+}
+
+.app-user-controls .signed-badge {
+  background-color: #87cefa88;
+  color: #1E90FF;
+  border-radius: 5px;
+  font-size: x-small;
+  font-weight: bolder;
+  margin: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-user-controls .signed-badge span {
+  margin: 4px 8px;
+}
+
+.app-user-controls .control-icons {
+  color: #818181;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-user-controls .control-icons i {
+  padding: 0 8px 0 8px;
+}
+
+.app-user-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 40px;
+}
+
+.app-user-profile .user-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app-user-profile .user-pic img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.app-user-profile .user-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app-user-profile .user-name p {
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+.app-user-profile .user-name small {
+  padding: 0;
+  font-weight: 600;
+  color: #1E90FF;
+  font-size: large;
+}
+
+.app-user-profile .user-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+}
+
+.app-user-profile .user-buttons .action-button {
+  color: #818181;
+  padding: 25px;
+}
+
+.app-user-profile .user-buttons .action-button .green-button {
+  border-radius: 50%;
+  background-color: #98fb9880;
+  padding: 15px;
+  color: #31ad31;
+}
+
+.app-user-profile .user-buttons .action-button .yellow-button {
+  border-radius: 50%;
+  background-color: #ffd9009d;
+  padding: 15px;
+  color: #b89c00;
+}
+
+.app-user-profile .user-buttons .action-button .blue-button {
+  border-radius: 50%;
+  background-color: #87cfeb88;
+  padding: 15px;
+  color: #5991a7;
+}
