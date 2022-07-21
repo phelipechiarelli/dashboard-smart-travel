@@ -1,0 +1,17 @@
+{
+    "name": "dashboard-smart-travel",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "gulp-sass": "^5.1.0",
+        "sass": "^1.53.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "node-sass -w scss/ -o Assets/css --recursive"
+    },
+    "author": "",
+    "license": "MIT"
+}
