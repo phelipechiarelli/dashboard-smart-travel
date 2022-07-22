@@ -4,6 +4,7 @@ sans-serif;
 $light-color: #c4a5f7;
 $user-profile-color: #68c3ec;
 $user-content-color: #68eccf;
+$border-lines-color: #e0e0e0;
 body {
     background: $light-color;
     margin: 0;
@@ -28,15 +29,4 @@ body {
     overflow: hidden;
     border-radius: 15px;
     margin: 16px 24px 24px 16px;
-}
-
-.app-navbar-container {}
-
-.app-user-content-container {
-    flex: 2;
-    background-color: $user-content-color;
-    padding: 40px 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }

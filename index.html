@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/Assets/css/main.css">
     <link rel="stylesheet" href="/Assets/css/app-sidebar.css">
     <link rel="stylesheet" href="/Assets/css/app-user-profile.css">
+    <link rel="stylesheet" href="/Assets/css/app-user-content.css">
     <script src="https://kit.fontawesome.com/99cc4729fe.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -51,9 +52,12 @@
                         <small>#235</small>
                     </div>
                     <div class="user-buttons">
-                        <div class="action-button"><a href="" class="green-button"><i class="fa-solid fa-phone"></i></a></div>
-                        <div class="action-button"><a href="" class="yellow-button"><i class="fa-solid fa-envelope"></i></a></div>
-                        <div class="action-button"><a href="" class="blue-button"><i class="fa-solid fa-message"></i></a></div>
+                        <div class="action-button"><a href="" class="green-button"><span><i class="fa-solid fa-phone"></i></a></span>
+                        </div>
+                        <div class="action-button"><a href="" class="yellow-button"><span><i class="fa-solid fa-envelope"></i></a></span>
+                        </div>
+                        <div class="action-button"><a href="" class="blue-button"><span><i class="fa-solid fa-message"></i></a></span>
+                        </div>
                     </div>
                 </div>
                 <div class="app-user-followups">
@@ -65,11 +69,141 @@
                         <div class="progress-bar"></div>
                     </div>
                 </div>
-                <div class="app-user-agenda"></div>
-                <div class="app-user-details"></div>
+                <div class="app-user-last-results">
+                    <div class="last-result-container">
+                        <div class="arrow-up"><i class="fa-solid fa-arrow-up"></i></div>
+                        <div class="last-results-text">
+                            <p>21/07/2022</p>
+                            <small>Top seller - White paper 90gm</small>
+                        </div>
+                        <div class="angle-right"><i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+
+                    <div class="last-result-container">
+                        <div class="arrow-up"><i class="fa-solid fa-arrow-up"></i></div>
+                        <div class="last-results-text">
+                            <p>15/07/2022</p>
+                            <small>Top 3 seller - White paper 90gm</small>
+                        </div>
+                        <div class="angle-right"><i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+
+                </div>
+                <div class="app-user-details">
+                    <div class="details-header">
+                        <i class="fa-regular fa-rectangle-list"></i>
+                        <p>Details</p>
+                    </div>
+                    <div class="details-content">
+                        <div class="company-container">
+                            <div class="company-label">
+                                <p>Company</p>
+                            </div>
+                            <div class="company-name">
+                                <p>Cloud 9</p>
+                            </div>
+                        </div>
+                        <div class="assigne-to-contaier">
+                            <div class="assigne-to-label">
+                                <p>Assigne to</p>
+                            </div>
+                            <div class="assigne-to-user">
+                                <img class="assigne-to-img" src="/Assets/img/doe.jpg" alt="">
+                                <p class="assigne-to-name">John Doe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-next-apointment">
+                        <div class="calendar"><i class="fa-solid fa-calendar"></i></div>
+                        <div class="next-apointment-text">
+                            <small>Next Appoitment</small>
+                            <p>Today 4pm</p>
+                        </div>
+                        <div class="arrow-right"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
             </div>
             <div class="app-user-content-container">
-                user content
+                <div class="app-user-content-navbar-container">
+                    <div class="app-user-content-navbar">
+                        <div class="navbar-link-box"><a href="" class="navbar-link">Overview</a></div>
+                        <div class="navbar-link-box"><a href="" class="navbar-link">Inventory</a></div>
+                        <div class="navbar-link-box"><a href="" class="navbar-link">Services</a></div>
+                        <div class="navbar-link-box"><a href="" class="navbar-link">Contractors</a></div>
+                    </div>
+                    <div class="app-user-content-icon">
+                        <a href="" class="app-user-content-icon-link"><i class="fa-regular fa-file-lines"></i></a>
+                    </div>
+                </div>
+
+                <div class="card-check-new-orders">
+                    <div class="calendar"><i class="fa-solid fa-check-double"></i></div>
+                    <div class="next-apointment-text">
+                        <small>Ready for new sales?</small>
+                        <p>Check out the latest orders</p>
+                    </div>
+                    <div class="arrow-right"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+
+                <div class="dual-card-container">
+                    <div class="card-check-inventory">
+                        <div class="circle blue"><i class="fa-solid fa-circle"></i></div>
+                        <div class="next-apointment-text">
+                            <p>Inventory</p>
+                            <h1>$3,200</h1>
+                            <small>42 itens</small>
+                            <hr>
+                            <small>420 cubic feet</small>
+                        </div>
+                        <div class="arrow-right"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                    <div class="card-check-services">
+                        <div class="circle yellow"><i class="fa-solid fa-circle"></i></div>
+                        <div class="next-apointment-text">
+                            <p>Services</p>
+                            <h1>$890</h1>
+                            <small>4 additional services</small>
+                            <hr>
+                            <small>Insurance</small>
+                        </div>
+                        <div class="arrow-right"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="card-check-agreements">
+                    <div class="next-apointment-text">
+                        <div class="agreements-card-header">
+                            <div><span class="agreements-label">Agreements</span><span class="agreements-value">03</span></div>
+                            <span><small>See all</small></span>
+                        </div>
+                        <div class="agreements-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Price</th>
+                                        <th>Status</th>
+                                        <th>Consignees</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#22832</td>
+                                        <td>$4,255 (420 CF)</td>
+                                        <td>
+                                            <div class="signed-badge"><span>Signed</span></div>
+                                        </td>
+                                        <td>foto</td>
+                                        <td><i class="fa-solid fa-ellipsis"></i></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

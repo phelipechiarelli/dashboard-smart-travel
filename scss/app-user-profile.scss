@@ -2,18 +2,19 @@
 $user-profile-color: #F8F8FF;
 $control-icons-color: #818181;
 .app-user-profile-container {
-    flex: 2;
+    flex: 1;
     background-color: $user-profile-color;
     padding: 40px 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-right: solid 2px $border-lines-color;
 }
 
 .app-user-controls {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 70%;
     padding: 10px 40px 0 40px;
     .signed-badge {
         background-color: #87cefa88;
@@ -78,22 +79,37 @@ $control-icons-color: #818181;
             color: $control-icons-color;
             padding: 25px;
             .green-button {
+                height: 40px;
+                width: 40px;
                 border-radius: 50%;
                 background-color: #98fb9880;
                 padding: 15px;
                 color: #31ad31;
+                span {
+                    padding: 0 3px;
+                }
             }
             .yellow-button {
+                height: 40px;
+                width: 40px;
                 border-radius: 50%;
                 background-color: #ffd9009d;
                 padding: 15px;
                 color: #b89c00;
+                span {
+                    padding: 0 3px;
+                }
             }
             .blue-button {
+                height: 40px;
+                width: 40px;
                 border-radius: 50%;
                 background-color: #87cfeb88;
                 padding: 15px;
                 color: #5991a7;
+                span {
+                    padding: 0 3px;
+                }
             }
         }
     }
@@ -134,5 +150,182 @@ $control-icons-color: #818181;
         width: 80%;
         height: 100%;
         background-color: #1E90FF;
+    }
+}
+
+.app-user-last-results {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px;
+    .last-result-container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+        border-bottom: solid 1px $border-lines-color;
+        .arrow-up {
+            height: 15px;
+            width: 15px;
+            padding: 12px;
+            border-radius: 8px;
+            background-color: #87cfeb88;
+            display: flex;
+            align-items: center;
+            color: #5991a7;
+            font-size: large;
+        }
+        .last-results-text {
+            flex-grow: 1;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 20px;
+            p {
+                padding: 0;
+                margin: 0;
+                font-weight: 600;
+                font-size: large;
+            }
+            small {
+                padding: 0;
+                font-weight: 600;
+                color: #818181;
+                font-size: small;
+            }
+        }
+        .angle-right {
+            color: #818181;
+        }
+    }
+}
+
+.app-user-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px;
+    .details-header {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 70%;
+        border-bottom: solid 1px $border-lines-color;
+        padding: 0 0 10px 0;
+        p {
+            padding: 0 0 0 10px;
+            margin: 0;
+            font-weight: bolder;
+            font-size: large;
+        }
+    }
+    .details-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 70%;
+        .company-container {
+            padding: 20px 0 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: row;
+            width: 100%;
+            .company-label {
+                margin: 0;
+                font-weight: bolder;
+                font-size: large;
+            }
+            .company-name {
+                padding: 0 0 0 10px;
+                margin: 0;
+                font-weight: bolder;
+                font-size: large;
+                color: #1E90FF;
+            }
+        }
+        .assigne-to-contaier {
+            padding: 0 0 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+            .assigne-to-label {
+                flex-grow: 1;
+                display: flex;
+                margin: 0;
+                width: 100%;
+                font-weight: bolder;
+                font-size: large;
+            }
+            .assigne-to-user {
+                margin: 0;
+                font-weight: bolder;
+                font-size: large;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                flex-direction: row;
+                .assigne-to-img {
+                    max-width: 15%;
+                    max-height: auto;
+                    border-radius: 50%;
+                    margin: 15px 0;
+                }
+                .assigne-to-name {
+                    padding: 0 0 0 10px;
+                    margin: 0;
+                    font-weight: bolder;
+                    font-size: large;
+                    color: #1E90FF;
+                }
+            }
+        }
+    }
+    .details-next-apointment {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+        background-color: #87cfeb88;
+        border-radius: 8px;
+        .calendar {
+            height: 15px;
+            width: 15px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            color: #5991a7;
+            font-size: large;
+        }
+        .next-apointment-text {
+            flex-grow: 1;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 20px;
+            p {
+                padding: 0;
+                margin: 0;
+                font-weight: 600;
+                font-size: large;
+            }
+            small {
+                padding: 0;
+                font-weight: 600;
+                color: #818181;
+                font-size: small;
+            }
+        }
+        .arrow-right {
+            color: #5991a7;
+            padding: 0 20px 0 0;
+        }
     }
 }

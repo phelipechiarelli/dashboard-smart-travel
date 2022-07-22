@@ -8,7 +8,7 @@ $sidebar-link-color: #818181;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-right: solid 1px #bababa;
+    border-right: solid 2px $border-lines-color;
     a {
         text-decoration: none;
     }

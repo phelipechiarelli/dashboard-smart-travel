@@ -1,0 +1,201 @@
+@import "main.scss";
+$user-content-color: #F0F8FF;
+$control-icons-color: #818181;
+$navbar-link-color: #1E90FF;
+$circle-color-yellow: #FFD700;
+.app-user-content-container {
+    flex: 2;
+    background-color: $user-content-color;
+    padding: 40px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .app-user-content-navbar-container {
+        display: flex;
+        width: 90%;
+        flex-direction: row;
+        border-bottom: solid 2px $border-lines-color;
+        padding: 0 0 15px 0;
+        .app-user-content-navbar {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            .navbar-link-box {
+                width: 10%;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                margin: 0 10px 0 0;
+                .navbar-link {
+                    margin: 16px 0;
+                    border-radius: 50%;
+                    flex-shrink: 0;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    color: $control-icons-color;
+                    text-decoration: none;
+                    font-size: small;
+                    font-weight: bolder;
+                    &:hover {
+                        color: $navbar-link-color;
+                    }
+                }
+            }
+        }
+        .app-user-content-icon-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background-color: $navbar-link-color;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+        }
+    }
+    .card-check-new-orders,
+    .card-check-agreements {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        background-color: #fff;
+        border-radius: 8px;
+        margin: 25px 0 10px 0;
+        .calendar {
+            height: 15px;
+            width: 15px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            color: #5991a7;
+            font-size: large;
+        }
+        .next-apointment-text {
+            flex-grow: 1;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 20px;
+            p {
+                padding: 0;
+                margin: 0;
+                font-weight: 600;
+                font-size: large;
+            }
+            small {
+                padding: 0;
+                font-weight: 600;
+                color: #818181;
+                font-size: small;
+            }
+        }
+        .agreements-card-header {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            justify-content: space-between;
+        }
+        .agreements-table {
+            width: 90%;
+            table {
+                width: 100%;
+                text-align: left;
+                margin: 0 auto;
+                border-collapse: collapse;
+                border-spacing: 0;
+                thead {
+                    th {
+                        color: $control-icons-color;
+                        border-bottom: solid 2px $border-lines-color;
+                        padding: 0 0 10px 0;
+                    }
+                }
+                tbody {
+                    td {
+                        padding: 30px 0 0 0;
+                    }
+                }
+            }
+            .signed-badge {
+                background-color: #87cefa88;
+                color: #1E90FF;
+                border-radius: 5px;
+                font-size: x-small;
+                font-weight: bolder;
+                margin: 2px;
+                display: flex;
+                width: 25%;
+                align-items: center;
+                span {
+                    margin: 4px 8px;
+                }
+            }
+        }
+        .arrow-right {
+            color: #5991a7;
+            padding: 0 20px 0 0;
+        }
+    }
+    .dual-card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        .card-check-services,
+        .card-check-inventory {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+            background-color: #fff;
+            border-radius: 8px;
+            margin: 25px 10px 10px 0;
+            .circle {
+                height: 15px;
+                width: 15px;
+                padding: 20px;
+                display: flex;
+                height: 75%;
+                align-items: flex-start;
+                flex-direction: column;
+                color: #5991a7;
+                font-size: large;
+                &.blue {
+                    color: $navbar-link-color
+                }
+                &.yellow {
+                    color: $circle-color-yellow;
+                }
+            }
+            .next-apointment-text {
+                flex-grow: 1;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 20px;
+                p {
+                    padding: 0;
+                    margin: 0;
+                    font-weight: 600;
+                    font-size: large;
+                }
+                small {
+                    padding: 0;
+                    font-weight: 600;
+                    color: #818181;
+                    font-size: small;
+                }
+            }
+            .arrow-right {
+                color: #5991a7;
+                padding: 0 20px 0 0;
+            }
+        }
+    }
+}
