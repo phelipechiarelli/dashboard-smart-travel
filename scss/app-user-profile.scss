@@ -329,3 +329,9 @@ $control-icons-color: #818181;
         }
     }
 }
+
+@media only screen and (max-width: 1025px) {
+    .app-user-profile-container {
+        max-width: 40%;
+    }
+}

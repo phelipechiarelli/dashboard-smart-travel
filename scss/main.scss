@@ -30,3 +30,10 @@ body {
     border-radius: 15px;
     margin: 16px 24px 24px 16px;
 }
+
+@media only screen and (max-width: 1024px) {
+    .app-main-container,
+    .flex-box {
+        margin: 50px;
+    }
+}

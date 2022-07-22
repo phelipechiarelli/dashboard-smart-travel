@@ -75,7 +75,7 @@ $circle-color-yellow: #FFD700;
             color: #5991a7;
             font-size: large;
         }
-        .next-apointment-text {
+        .check-card-content {
             flex-grow: 1;
             display: flex;
             align-items: flex-start;
@@ -95,13 +95,29 @@ $circle-color-yellow: #FFD700;
             }
         }
         .agreements-card-header {
+            width: 100%;
             display: flex;
             flex-direction: row;
-            width: 90%;
             justify-content: space-between;
+            margin: 0 0 60px 0;
+            .agreements-label,
+            .agreements-value {
+                font-weight: bolder;
+                padding: 0 10px 0 0;
+                font-size: x-large;
+            }
+            .agreements-value {
+                color: $control-icons-color;
+            }
+            .agreements-see-all {
+                font-weight: bolder;
+                padding: 0 10px 0 0;
+                color: $navbar-link-color;
+                text-decoration: none;
+            }
         }
         .agreements-table {
-            width: 90%;
+            width: 100%;
             table {
                 width: 100%;
                 text-align: left;
@@ -117,23 +133,70 @@ $circle-color-yellow: #FFD700;
                 }
                 tbody {
                     td {
-                        padding: 30px 0 0 0;
+                        padding: 45px 0 0 0;
+                        font-size: larger;
+                        .item-id {
+                            color: $navbar-link-color;
+                            font-weight: bolder;
+                        }
+                        .item-price {
+                            font-weight: bolder;
+                            small {
+                                color: $control-icons-color;
+                            }
+                        }
+                        .item-status {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            .status-date {
+                                max-width: 50%;
+                                color: $control-icons-color;
+                                font-size: small;
+                                font-weight: bolder;
+                            }
+                            .signed-badge {
+                                display: flex;
+                                justify-content: center;
+                                width: 50px;
+                                text-align: center;
+                                background-color: #87cefa88;
+                                color: #1E90FF;
+                                border-radius: 5px;
+                                font-weight: bolder;
+                                margin: 4px 8px;
+                                font-size: small;
+                            }
+                            .canceled-badge {
+                                display: flex;
+                                justify-content: center;
+                                width: 65px;
+                                text-align: center;
+                                background-color: #e4e4e4;
+                                color: $control-icons-color;
+                                border-radius: 5px;
+                                font-size: small;
+                                font-weight: bolder;
+                                margin: 4px 8px;
+                            }
+                        }
+                        .item-consignee {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                        }
                     }
                 }
             }
-            .signed-badge {
-                background-color: #87cefa88;
-                color: #1E90FF;
-                border-radius: 5px;
-                font-size: x-small;
-                font-weight: bolder;
-                margin: 2px;
-                display: flex;
-                width: 25%;
-                align-items: center;
-                span {
-                    margin: 4px 8px;
-                }
+        }
+        .consignee-img {
+            padding: 0;
+            margin: 0;
+            width: 15px;
+            margin: 0 35px 0 0;
+            img {
+                width: 40px;
+                border-radius: 50%;
             }
         }
         .arrow-right {
@@ -173,7 +236,7 @@ $circle-color-yellow: #FFD700;
                     color: $circle-color-yellow;
                 }
             }
-            .next-apointment-text {
+            .check-card-content {
                 flex-grow: 1;
                 display: flex;
                 align-items: flex-start;
@@ -197,5 +260,17 @@ $circle-color-yellow: #FFD700;
                 padding: 0 20px 0 0;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .app-user-content-container {
+        max-width: 50%;
+    }
+    .navbar-link-box {
+        padding-right: 25px;
+    }
+    .app-user-content-icon-link {
+        margin-right: 25px;
     }
 }

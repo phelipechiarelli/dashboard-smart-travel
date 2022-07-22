@@ -101,3 +101,9 @@ $sidebar-link-color: #818181;
         }
     }
 }
+
+@media only screen and (max-width: 1025px) {
+    .app-sidebar-container {
+        padding-left: 64px;
+    }
+}

@@ -35,6 +35,13 @@ body {
   margin: 16px 24px 24px 16px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .app-main-container,
+  .flex-box {
+    margin: 50px;
+  }
+}
+
 .app-user-content-container {
   -webkit-box-flex: 2;
       -ms-flex: 2;
@@ -168,8 +175,8 @@ body {
   font-size: large;
 }
 
-.app-user-content-container .card-check-new-orders .next-apointment-text,
-.app-user-content-container .card-check-agreements .next-apointment-text {
+.app-user-content-container .card-check-new-orders .check-card-content,
+.app-user-content-container .card-check-agreements .check-card-content {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -186,16 +193,16 @@ body {
   padding: 20px;
 }
 
-.app-user-content-container .card-check-new-orders .next-apointment-text p,
-.app-user-content-container .card-check-agreements .next-apointment-text p {
+.app-user-content-container .card-check-new-orders .check-card-content p,
+.app-user-content-container .card-check-agreements .check-card-content p {
   padding: 0;
   margin: 0;
   font-weight: 600;
   font-size: large;
 }
 
-.app-user-content-container .card-check-new-orders .next-apointment-text small,
-.app-user-content-container .card-check-agreements .next-apointment-text small {
+.app-user-content-container .card-check-new-orders .check-card-content small,
+.app-user-content-container .card-check-agreements .check-card-content small {
   padding: 0;
   font-weight: 600;
   color: #818181;
@@ -204,6 +211,7 @@ body {
 
 .app-user-content-container .card-check-new-orders .agreements-card-header,
 .app-user-content-container .card-check-agreements .agreements-card-header {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,15 +219,37 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 90%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 0 60px 0;
+}
+
+.app-user-content-container .card-check-new-orders .agreements-card-header .agreements-label,
+.app-user-content-container .card-check-new-orders .agreements-card-header .agreements-value,
+.app-user-content-container .card-check-agreements .agreements-card-header .agreements-label,
+.app-user-content-container .card-check-agreements .agreements-card-header .agreements-value {
+  font-weight: bolder;
+  padding: 0 10px 0 0;
+  font-size: x-large;
+}
+
+.app-user-content-container .card-check-new-orders .agreements-card-header .agreements-value,
+.app-user-content-container .card-check-agreements .agreements-card-header .agreements-value {
+  color: #818181;
+}
+
+.app-user-content-container .card-check-new-orders .agreements-card-header .agreements-see-all,
+.app-user-content-container .card-check-agreements .agreements-card-header .agreements-see-all {
+  font-weight: bolder;
+  padding: 0 10px 0 0;
+  color: #1E90FF;
+  text-decoration: none;
 }
 
 .app-user-content-container .card-check-new-orders .agreements-table,
 .app-user-content-container .card-check-agreements .agreements-table {
-  width: 90%;
+  width: 100%;
 }
 
 .app-user-content-container .card-check-new-orders .agreements-table table,
@@ -240,29 +270,110 @@ body {
 
 .app-user-content-container .card-check-new-orders .agreements-table table tbody td,
 .app-user-content-container .card-check-agreements .agreements-table table tbody td {
-  padding: 30px 0 0 0;
+  padding: 45px 0 0 0;
+  font-size: larger;
 }
 
-.app-user-content-container .card-check-new-orders .agreements-table .signed-badge,
-.app-user-content-container .card-check-agreements .agreements-table .signed-badge {
-  background-color: #87cefa88;
+.app-user-content-container .card-check-new-orders .agreements-table table tbody td .item-id,
+.app-user-content-container .card-check-agreements .agreements-table table tbody td .item-id {
   color: #1E90FF;
-  border-radius: 5px;
-  font-size: x-small;
   font-weight: bolder;
-  margin: 2px;
+}
+
+.app-user-content-container .card-check-new-orders .agreements-table table tbody td .item-price,
+.app-user-content-container .card-check-agreements .agreements-table table tbody td .item-price {
+  font-weight: bolder;
+}
+
+.app-user-content-container .card-check-new-orders .agreements-table table tbody td .item-price small,
+.app-user-content-container .card-check-agreements .agreements-table table tbody td .item-price small {
+  color: #818181;
+}
+
+.app-user-content-container .card-check-new-orders .agreements-table table tbody td .item-status,
+.app-user-content-container .card-check-agreements .agreements-table table tbody td .item-status {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 25%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.app-user-content-container .card-check-new-orders .agreements-table .signed-badge span,
-.app-user-content-container .card-check-agreements .agreements-table .signed-badge span {
+.app-user-content-container .card-check-new-orders .agreements-table table tbody td .item-status .status-date,
+.app-user-content-container .card-check-agreements .agreements-table table tbody td .item-status .status-date {
+  max-width: 50%;
+  color: #818181;
+  font-size: small;
+  font-weight: bolder;
+}
+
+.app-user-content-container .card-check-new-orders .agreements-table table tbody td .item-status .signed-badge,
+.app-user-content-container .card-check-agreements .agreements-table table tbody td .item-status .signed-badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  text-align: center;
+  background-color: #87cefa88;
+  color: #1E90FF;
+  border-radius: 5px;
+  font-weight: bolder;
   margin: 4px 8px;
+  font-size: small;
+}
+
+.app-user-content-container .card-check-new-orders .agreements-table table tbody td .item-status .canceled-badge,
+.app-user-content-container .card-check-agreements .agreements-table table tbody td .item-status .canceled-badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 65px;
+  text-align: center;
+  background-color: #e4e4e4;
+  color: #818181;
+  border-radius: 5px;
+  font-size: small;
+  font-weight: bolder;
+  margin: 4px 8px;
+}
+
+.app-user-content-container .card-check-new-orders .agreements-table table tbody td .item-consignee,
+.app-user-content-container .card-check-agreements .agreements-table table tbody td .item-consignee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-user-content-container .card-check-new-orders .consignee-img,
+.app-user-content-container .card-check-agreements .consignee-img {
+  padding: 0;
+  margin: 0;
+  width: 15px;
+  margin: 0 35px 0 0;
+}
+
+.app-user-content-container .card-check-new-orders .consignee-img img,
+.app-user-content-container .card-check-agreements .consignee-img img {
+  width: 40px;
+  border-radius: 50%;
 }
 
 .app-user-content-container .card-check-new-orders .arrow-right,
@@ -336,8 +447,8 @@ body {
   color: #FFD700;
 }
 
-.app-user-content-container .dual-card-container .card-check-services .next-apointment-text,
-.app-user-content-container .dual-card-container .card-check-inventory .next-apointment-text {
+.app-user-content-container .dual-card-container .card-check-services .check-card-content,
+.app-user-content-container .dual-card-container .card-check-inventory .check-card-content {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -354,16 +465,16 @@ body {
   padding: 20px;
 }
 
-.app-user-content-container .dual-card-container .card-check-services .next-apointment-text p,
-.app-user-content-container .dual-card-container .card-check-inventory .next-apointment-text p {
+.app-user-content-container .dual-card-container .card-check-services .check-card-content p,
+.app-user-content-container .dual-card-container .card-check-inventory .check-card-content p {
   padding: 0;
   margin: 0;
   font-weight: 600;
   font-size: large;
 }
 
-.app-user-content-container .dual-card-container .card-check-services .next-apointment-text small,
-.app-user-content-container .dual-card-container .card-check-inventory .next-apointment-text small {
+.app-user-content-container .dual-card-container .card-check-services .check-card-content small,
+.app-user-content-container .dual-card-container .card-check-inventory .check-card-content small {
   padding: 0;
   font-weight: 600;
   color: #818181;
@@ -374,4 +485,16 @@ body {
 .app-user-content-container .dual-card-container .card-check-inventory .arrow-right {
   color: #5991a7;
   padding: 0 20px 0 0;
+}
+
+@media only screen and (max-width: 1025px) {
+  .app-user-content-container {
+    max-width: 50%;
+  }
+  .navbar-link-box {
+    padding-right: 25px;
+  }
+  .app-user-content-icon-link {
+    margin-right: 25px;
+  }
 }
